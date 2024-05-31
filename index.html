@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+   <!-- Nav Section-->
+   
+    <div>
+        <nav class="navbar">
+               
+<!--
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#voluntree">Voluntree</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+           </ul>
+           <ul >
+              <li class="hideOnMobile"><a href="#banner">Home</a></li>
+              <li class="hideOnMobile"><a href="#blog">Blog</a></li>
+              <li class="hideOnMobile"><a href="#about">About</a></li>
+              <li class="hideOnMobile"><a href="#voluntree">Voluntree</a></li>
+              <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a></li>
+              
+             </ul>
+            -->
+            <ul class="sidebar">  
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li onclick=hideSidebar()><a href="#banner">Home</a></li>
+              <li onclick=hideSidebar()><a href="#blog">Blog</a></li>
+              <li onclick=hideSidebar()><a href="#gallery">Gallery</a></li>
+              <li onclick=hideSidebar()><a href="#about">About</a></li>
+              <li onclick=hideSidebar()><a href="#voluntree">Voluntree</a></li>
+              <li onclick=hideSidebar()><a href="#contact">Contact</a></li>
+            </ul>
+          
+            <ul>
+              <li class="logo"><img src="images/logo.jpeg" alt="" style="width: 40px; height: 40px;"></li>    
+                <li class="hideOnMobile"><a href="#banner">Home</a></li>
+                <li class="hideOnMobile"><a href="#blog">Blog</a></li>
+                <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#voluntree">Voluntree</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div> 
+   <br><br>
+    <!-- Banner Section-->
+    <section id="banner">
+      
+       
+        <div class="container">
+          <div class="swiper banner-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img01.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner1
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img02.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner2
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img03.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner3
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img04.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner4
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img05.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner5
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img06.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner6
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+              <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                <div class="banner-slide-img">
+                  <img src="images/img07.png" alt="banner">
+                </div>
+                <div class="banner-slide-content">
+                  <div class="banner-slide-content-bottom">
+                    <h2 class="banner-name">
+                      Banner7
+                    </h2>
+                    <h3 class="banner-rating">
+                      <span>4.5</span>
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide-end -->
+                <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                  <div class="banner-slide-img">
+                    <img src="images/img09.png" alt="banner">
+                  </div>
+                  <div class="banner-slide-content">
+                    <div class="banner-slide-content-bottom">
+                      <h2 class="banner-name">
+                        Banner9
+                      </h2>
+                      <h3 class="banner-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                  <div class="banner-slide-img">
+                    <img src="images/img010.png" alt="banner">
+                  </div>
+                  <div class="banner-slide-content">
+                    <div class="banner-slide-content-bottom">
+                      <h2 class="banner-name">
+                        Banner10
+                      </h2>
+                      <h3 class="banner-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+              
+                <!-- Slide-start -->
+              <div class="swiper-slide banner-slide">
+                  <div class="banner-slide-img">
+                    <img src="images/end.png" alt="banner">
+                  </div>
+                  <div class="banner-slide-content">
+                    <div class="banner-slide-content-bottom">
+                      <h2 class="banner-name">
+                        Thank you
+                      </h2>
+                      <h3 class="banner-rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                        </div>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-end -->
+            </div>
+  
+            <div class="banner-slider-control">
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+  
+    
+
+    <!-- block section-->
+<section >
+  <h1 class="head" id="blog">___Blogs___</h1>
+    <div class="wrapper">
+        <div class="container">
+          <!--
+            <div class="block">
+            <img src="img1.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                
+                  
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img2.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img3.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img4.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+        -->
+          <div class="block">
+            <img src="img5.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img6.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img7.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <!--
+          <div class="block">
+            <img src="img8.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+        -->
+          <div class="block">
+            <img src="img9.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img10.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+          <div class="block">
+            <img src="img11.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+        
+          <div class="block">
+            <img src="img12.png" alt="Our Team">
+            
+            <h2>Technology</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                voluptates eveniet exercitationem sapiente harum velit culpa error consectetur
+                possimus facilis dicta voluptatibus maiores,
+                aut impedit sed ratione deleniti ea hic?</p>
+                <br>
+                
+  
+                <div class="social-icons" >
+                  <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                  <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+               </div>
+               <br>
+               <p>&copy; Copyright. All rights reserved.</p>
+          </div>
+           
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<!--
+<section >
+  <h1 class="head" id="gallery">___Gallery___</h1>
+  <div class="gallery-container">
+  <div class="gallery">
+    <img src="images/card2.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card3.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card4.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card5.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card6.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card7.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card8.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card9.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/card1.jpeg" alt="Animal">
+    <div class="intro">
+      <h1>Animal</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ab,
+         mollitia autem officiis id dicta corporis soluta numquam qui est modi nobis explicabo, 
+        laudantium error, neque non voluptatum fugit nesciunt!</p>
+    </div>
+  </div>
+</div>
+</section>
+*/
+--><!--Gallery-->
+<section id="gallery">
+  <div class="Gallery-info">
+      <h1>Our <span id="blue">Gallery</span></h1>
+  <p>Here is my Art and Sketch</p>
+</div>
+
+<div class="Gallery-row">
+  <div class="hover-effect" > 
+      <img src="images/img2.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img3.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img4.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img6.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img7.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img8.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img9.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img10.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img11.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img12.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img13.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+  <div class="hover-effect" > 
+      <img src="images/img14.png">
+      <div class="intro">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae repudiandae!</p>
+      </div>
+  </div>
+</div>
+</section>
+
+    <!--Voluntree  section-->
+
+<section >
+    <h1 class="head" id="voluntree">Client Testimonial Template</h1>
+    <div class="clients">
+        <div class="box" id="box1">
+            <p>Lorem ipsum dolor sit amet, elit. Recusandae rerum ratione iusto magni quam quod vitae reiciendis! Cupiditate, incidunt molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <hr>
+            <div>
+            <p class="name">Lorem <br>Ipsum</p>
+            <img src="images/Client01.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="box" id="box2" >
+            <p>Lorem ipsum dolor sit amet, elit. Recusandae rerum ratione iusto magni quam quod vitae reiciendis! Cupiditate, incidunt molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <hr>
+            <p class="name">Lorem <br>Ipsum</p>
+            <img src="images/Client02.jpeg" alt="" >
+        </div>
+
+        <div class="box" id="box3" >
+            <p>Lorem ipsum dolor sit amet, elit. Recusandae rerum ratione iusto magni quam quod vitae reiciendis! Cupiditate, incidunt molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <hr>
+            <p class="name">Lorem <br>Ipsum</p>
+            <img src="images/Client03.jpeg" alt="">
+        </div>
+    </div>
+
+</section>
+<br><br>
+<br>
+
+
+  <!-- Contact Section -->
+
+<section >
+  <h1 class="head" id="contact">___Contact___</h1>
+  <div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+">
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit <img src="" alt=""></button>
+    </form>
+    <div class="contact-right">
+        <img src="images/right-img.jpg" alt="">
+    </div>
+</div>
+
+</section>
+   
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/9c5c95b4a0.js" crossorigin="anonymous"></script>
+
+</body>
+  <!-- Footer Section-->
+
+  <footer>
+    <section id="about">
+      <h1 class="head" style="color: white;">About us</h1>
+    <div class="footer-content">
+        <div class="footer-section-links">
+            <h3>LOGO</h3>
+            <ul>
+                <li><a href="#">SOLOGAN COMPANY</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-links">
+            <ul>
+                <li><a href="#">WEEBLY THEMES</a></li>
+                <li><a href="#">PRE_SALE FAQS</a></li>
+                <li><a href="#">SUBMIT A TICKET</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-links">
+            
+            <ul>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">THEME TWEAK</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-links">
+            <ul>
+                <li><a href="#">SHOWCASE</a></li>
+                <li><a href="#">WIDGETKIT</a></li>
+                <li><a href="#">SUPPORT</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-links">
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">AFFILIATES</a></li>
+                <li><a href="#">RESOURCES</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-links">
+          <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+          </ul>
+      </div>
+    </div>
+    <hr><hr>
+    <br><br>
+    
+        <div class="social-icons" style="display: flex; justify-content: center;">
+            <a href="https://www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.wifi.com" class="icon"><i class="fa-solid fa-wifi"></i></a>
+            <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="https://github.com" class="icon"><i class="fa-brands fa-github"></i></i></a>
+          </div>
+    <br>
+    <div class="footer-content">
+        <p>&copy; Copyright. All rights reserved.</p>
+    </div>
+</section>
+</footer>
+
+</html>
